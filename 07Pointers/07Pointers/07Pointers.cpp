@@ -2,10 +2,24 @@
 //
 
 #include <iostream>
+#define LOG(x) std::cout << x << std::endl
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    void* PtrNull = NULL;  //NULL就是0 
+
+    int var = 8;
+    int* ptr = &var; //变量地址赋值给ptr
+    *ptr = 10;
+    LOG(var);
+
+    char* buffer = new char[8];
+    memset(buffer, 0, 8); //创建8个字节的内存
+
+    char** ptrc = &buffer; //ptrc里存buffer的地址
+
+    delete[] buffer; //用完后记得删除
+    std::cin.get();
 }
 
 // 运行程序: Ctrl + F5 或调试 >“开始执行(不调试)”菜单
