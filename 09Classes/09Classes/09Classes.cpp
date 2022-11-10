@@ -19,11 +19,12 @@ public:
 
 
 
-int main()
+int main1()
 {
     std::cout << "Hello World!\n";
     Player player;
     player.x = 5;
+    return 0;
 
 }
 

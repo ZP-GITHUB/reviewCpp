@@ -18,5 +18,8 @@
     <ClCompile Include="09Classes.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="LogMain.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
