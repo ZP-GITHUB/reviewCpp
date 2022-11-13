@@ -1,0 +1,4 @@
+﻿  10StaticC++.cpp
+10StaticC++.obj : error LNK2001: 无法解析的外部符号 "public: static int EntityC::a" (?a@EntityC@@2HA)
+10StaticC++.obj : error LNK2001: 无法解析的外部符号 "public: static int EntityC::b" (?b@EntityC@@2HA)
+F:\大学\C++\reviewCpp\10StaticC++\Debug\10StaticC++.exe : fatal error LNK1120: 2 个无法解析的外部命令
