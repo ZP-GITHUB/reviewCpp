@@ -7,7 +7,7 @@ int s_Variable = 5;
 
 void Function()
 {
-
+    static int i = 0;
 }
 
 struct EntityA
@@ -44,7 +44,7 @@ struct EntityC
     }
 };
 
-int main()
+int main1()
 {
     EntityA e;
     e.x = 2;
@@ -67,18 +67,19 @@ int main()
     eb1.Print(); //7,8
 
  
-    EntityC::a = 4;
-    EntityC::b = 5;
+    //EntityC::a = 4;
+    //EntityC::b = 5;
 
    
-    EntityC::a = 7;
-    EntityC::b = 8;
+    //EntityC::a = 7;
+    //EntityC::b = 8;
 
-    EntityC::Print();  //7,8
-    EntityC::Print(); //7,8
+    //EntityC::Print();  //7,8
+    //EntityC::Print(); //7,8
 
     std::cout << s_Variable << std::endl;
     std::cin.get();
+    return 0;
 }
 
 // 运行程序: Ctrl + F5 或调试 >“开始执行(不调试)”菜单

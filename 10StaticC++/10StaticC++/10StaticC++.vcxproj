@@ -140,6 +140,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="10StaticC++.cpp" />
+    <ClCompile Include="LocalStatic.cpp" />
     <ClCompile Include="Static.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
