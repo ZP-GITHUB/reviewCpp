@@ -10,14 +10,20 @@ public:
 
     Entity()
     {
-
+        std::cout << "Constructed Entity" << std::endl;
     }
+    
 
-    Entity(float x, float y)
+    ~Entity()
     {
-        X = x;
-        Y = y;
+        std::cout << "Destroyed Entity" << std::endl;
     }
+
+    //Entity(float x, float y)
+    //{
+    //    X = x;
+    //    Y = y;
+    //}
 
     //void Init()
     //{
@@ -31,12 +37,21 @@ public:
     }
 };
 
+void Function()
+{
+    Entity e;
+    e.Print();
+
+}
+
 int main()
 {
-    Entity e(10.0f, 5.0f);
-    std::cout << e.X << std::endl;
+    //Entity e(10.0f, 5.0f);
+    //std::cout << e.X << std::endl;
+    //e.Print();
+    Function();
     std::cout << "Hello World!\n";
-    e.Print();
+
 }
 
 // 运行程序: Ctrl + F5 或调试 >“开始执行(不调试)”菜单
